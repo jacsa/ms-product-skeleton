@@ -8,14 +8,17 @@ const port = process.env.PORT || 8080;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+const pass1 = process.env.pass1;
+const pass2 = process.env.pass2;
+
 const users = [
     {
         username: "user1",
-        password: "password1234"
+        password: pass1
     },
     {
         username: "user2",
-        password: "password2468"
+        password: pass2
     }
 ]
 
